@@ -4,36 +4,17 @@
 }
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl360\slmult1\pardirnatural
+// _____ Arrange _____ //
+login as <user>
 
-\f0\fs36 \cf2 // _____ Arrange _____ //\
+click <page>
+click Add <entity>
 
-\b \cf3 login as 
-\b0 \cf0 <user>\
+// _______ Act _______ //
 
-\b \cf3 click
-\b0 \cf0  <page>\
+set <Property 1> -> “<value>”
+set <Property 2> -> “<value>”
 
-\b \cf3 click
-\b0 \cf0  Add <entity>\
-\
-\cf2 // _______ Act _______ //\
-
-\b \cf3 set
-\b0 \cf0  <Property 1> 
-\b \cf4 ->
-\b0 \cf0  \'93<value>\'94\
-
-\b \cf3 set
-\b0 \cf0  <Property 2> 
-\b \cf4 ->
-\b0 \cf0  \'93<value>\'94\
-
-\b \cf3 click
-\b0 \cf0  Save\
-\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl360\slmult1\pardirnatural
-\cf2 // _____ Assert _____ //\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\sl360\slmult1\pardirnatural
-
-\b \cf3 expect row
-\b0 \cf0  \'93<entity name>\'94}
+click Save
+// _____ Assert _____ //
+ expect row “<entity name>”
