@@ -1,0 +1,14 @@
+// _____ Arrange _____ //
+login as <user>
+
+click <page>
+click Add <entity>
+
+// _______ Act _______ //
+
+set <Property 1> -> “<value>”
+set <Property 2> -> “<value>”
+
+click Save
+// _____ Assert _____ //
+ expect row “<entity name>”
