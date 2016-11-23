@@ -1,0 +1,1 @@
+/* Login script for an application using nightwatch.js and mocha.js */
