@@ -4,3 +4,5 @@
     # Exclude files and directories in the root directory whose names are a one-character
     # extension of temp. For example, /tempa and /tempb are excluded.
     temp?
+*.md
+    !README.md
