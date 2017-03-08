@@ -4,5 +4,7 @@ FROM beckyzorz/playground-testing
 # COPY path\to\file destination\path
 # RUN path\to\file file\destination
 
-docker build -t playground-testing:latest -t playground-testing:nsfw
+$build_statement = 'docker build -t playground-testing:latest -t playground-testing:nsfw'
+
+${repository_name} = 'playground_testing'
 RUN echo 'Build has been tagged with #'
