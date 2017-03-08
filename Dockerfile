@@ -19,4 +19,4 @@ ${repository_name:-playground_testing}
 
 
 
-CMD echo 'Build has been tagged with #'
+RUN echo 'Build has been tagged with #'
