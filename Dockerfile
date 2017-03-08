@@ -8,7 +8,7 @@ ENV $build_statement = 'docker build -t playground-testing:nsfw'
 # COPY path\to\file destination\path
 # RUN path\to\file file\destination
 # RUN ["/bin/bash", "opts", "cmd"] This is a JSON array
-# EXPOSE
+# EXPOSE <port> [<port>...]
 # LABEL <key>=<value> <key>=<value>
 # USER
 # VOLUME
