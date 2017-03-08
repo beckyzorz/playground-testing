@@ -6,3 +6,7 @@
     temp?
 *.md
     !README.md
+    
+    # Ignore the docker files in the final build
+.dockerignore
+Dockerfile 
