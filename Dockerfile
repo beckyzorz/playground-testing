@@ -1,8 +1,8 @@
 # escape = `
 # Add multiple tags to the build include: 'latest', 'nsfw'
-FROM beckyzorz/playground-testing
+FROM beckyzorz/playground-testing:latest
 ENV ${repository_name} = 'playground_testing'
-ENV $build_statement = 'docker build -t playground-testing:latest -t playground-testing:nsfw'
+ENV $build_statement = 'docker build -t playground-testing:nsfw'
 # WORKDIR
 # ADD
 # COPY path\to\file destination\path
